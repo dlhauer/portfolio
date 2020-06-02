@@ -1,0 +1,163 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #303030;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+p {
+  font-size: 1.9rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.6rem;
+  transition: color 0.3s;
+}
+
+.App {
+  text-align: center;
+  font-size: 62.5%;
+  font-family: Montserrat, Arial, sans-serif;
+  box-sizing: border-box;
+  max-width: 1000px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 50px 0 50px;
+}
+
+.title-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+.name {
+  border-bottom: 1px solid white;
+  padding: 0px;
+  margin-bottom: 10px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+  margin-right: 10px;
+}
+
+.projects:hover {
+  color: #00ffff;
+}
+
+.yt:hover {
+  color: red;
+}
+
+.li:hover {
+  color: #0072b1;
+}
+
+.gh:hover {
+  color: #ff00ff;
+}
+
+.body-text {
+  text-align: left;
+  margin-left: 100px;
+  padding-left: 40px;
+  border-left: 5px solid #aa0000;
+}
+
+.greeting {
+  font-size: 4rem;
+  margin: 0px;
+}
+
+.home-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+  margin-bottom: 200px;
+  justify-content: center;
+}
+
+.img-container {
+  margin-left: 35px;
+  margin-right: 40px;
+  float: right;
+}
+
+.circle {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+}
+
+.avatar {
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .links {
+    margin-top: 30px;
+  }
+
+  .home-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .img-container {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+
+  .body-text {
+    padding-left: 0px;
+    margin-left: 0px;
+    border: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .circle {
+    height: 235px;
+    width: 235px;
+  }
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .body-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
