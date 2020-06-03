@@ -5,14 +5,13 @@ html {
 body {
   background-color: #303030;
   color: white;
-  display: flex;
-  justify-content: center;
+  /* border: 5px solid green; */
 }
 p {
   font-size: 1.9rem;
 }
 
-a {
+.link {
   color: white;
   text-decoration: none;
   font-size: 1.6rem;
@@ -24,7 +23,10 @@ a {
   font-size: 62.5%;
   font-family: Montserrat, Arial, sans-serif;
   box-sizing: border-box;
+  width: 100%;
   max-width: 1000px;
+  margin: auto;
+  /* border: 1px solid red; */
 }
 
 .nav-container {
@@ -32,6 +34,8 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 0 50px 0 50px;
+  /* border: 1px solid blue; */
+  max-width: 100%;
 }
 
 .title-container {
@@ -64,7 +68,7 @@ h2 {
   margin-right: 10px;
 }
 
-.projects:hover {
+.link:hover {
   color: #00ffff;
 }
 
@@ -87,7 +91,7 @@ h2 {
   border-left: 5px solid #aa0000;
 }
 
-.greeting {
+.heading {
   font-size: 4rem;
   margin: 0px;
 }
@@ -160,4 +164,56 @@ h2 {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+/*Project styles */
+
+.projects-heading {
+  margin: 2rem 0;
+}
+
+.project-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 3rem;
+  /* border: 1px solid blue; */
+}
+
+.project-text {
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.project-description {
+  font-size: 1.6rem;
+}
+
+.image-container {
+  height: 400px;
+  margin-left: 40px;
+}
+
+.project-image {
+  height: 100%;
+}
+
+.mydish-image {
+  border-radius: 20px;
+}
+
+.knapsack-container {
+  height: 300px;
+}
+
+.project-link {
+  color: #00ffff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+
+.project-link:hover {
+  text-decoration: underline;
 }

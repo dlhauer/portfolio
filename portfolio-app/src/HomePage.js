@@ -4,7 +4,7 @@ import danImg from "./assets/dan_avatar_smaller.JPG";
 const HomePage = (props) => (
   <div className="home-container">
     <div className="body-text">
-      <p className="greeting">Hi!</p>
+      <p className="heading">Hi!</p>
       <p>
         I'm a full stack web developer proficient in JavaScript, React, Node,
         and Python.
@@ -15,7 +15,6 @@ const HomePage = (props) => (
         dedicated to solving tough problems.
       </p>
       <p>To see projects I've done, click here.</p>
-      <p>To learn more about me as a human bean, click here.</p>
     </div>
     <div className="img-container">
       <div className="circle">
