@@ -5,7 +5,6 @@ html {
 body {
   background-color: #303030;
   color: white;
-  /* border: 5px solid green; */
 }
 p {
   font-size: 1.9rem;
@@ -70,6 +69,7 @@ h2 {
 
 .link:hover {
   color: #00ffff;
+  cursor: pointer;
 }
 
 .yt:hover {
@@ -140,7 +140,7 @@ h2 {
   height: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .nav-container {
     flex-direction: column;
   }
@@ -194,15 +194,17 @@ h2 {
 .project-container {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   margin-bottom: 6rem;
   /* border: 1px solid blue; */
 }
 
 .project-text {
-  max-width: 500px;
+  width: 50%;
+  /* border: 1px solid red; */
   line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .project-description {
@@ -226,6 +228,10 @@ h2 {
   height: 300px;
 }
 
+.link-container {
+  /* border: 1px solid red; */
+  display: flex;
+}
 .project-link {
   color: #00ffff;
   font-size: 1.6rem;
@@ -237,15 +243,26 @@ h2 {
   text-decoration: underline;
 }
 
-.inline-link {
-  font-size: inherit;
+.pr-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 800px) {
+.pr-link {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1000px) {
   .project-container {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     /* border: 3px solid green; */
+  }
+
+  .project-text {
+    width: 65%;
   }
 
   .project-title {
@@ -255,14 +272,36 @@ h2 {
   .link-container {
     display: flex;
     justify-content: center;
-    /* border: 1px solid red; */
+    /* margin-left: 90px; */
+  }
+
+  .wacky-container {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: flex-start;
+    width: 165px;
   }
 
   .project-link {
     margin-left: 1.5rem;
+    margin-right: 0;
+    /* border: 1px solid green; */
   }
 
   .image-container {
     margin: 0;
   }
+}
+
+@media (max-width: 600px) {
+  .project-text {
+    width: 90%;
+  }
+}
+
+.inline-link {
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
 }
