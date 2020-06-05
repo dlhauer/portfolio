@@ -3,7 +3,7 @@ import React from "react";
 const Project = ({ project }) => (
   <div className="project-container">
     <div className="body-text project-text">
-      <h2>{project.name}</h2>
+      <h2 className="project-title">{project.name}</h2>
       <div className="link-container">
         {project.site && (
           <a className="link project-link" href={project.site} target="_blank">
@@ -20,7 +20,7 @@ const Project = ({ project }) => (
     </div>
     <div
       className={`image-container ${
-        !project.name.includes("MyDish") && "knapsack-container"
+        !project.name.includes("MyDish") && "horiz-container"
       }`}
     >
       {project.image && (

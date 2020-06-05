@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import danImg from "./assets/dan_avatar_smaller.JPG";
 
 const HomePage = (props) => (
@@ -14,7 +15,12 @@ const HomePage = (props) => (
         run. I also like collaborating with teams of smart people who are
         dedicated to solving tough problems.
       </p>
-      <p>To see projects I've done, click here.</p>
+      <p>
+        To see projects I've done, click{" "}
+        <Link className="link project-link inline-link" to="/projects">
+          here.
+        </Link>
+      </p>
     </div>
     <div className="img-container">
       <div className="circle">
