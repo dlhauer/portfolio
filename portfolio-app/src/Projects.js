@@ -10,7 +10,7 @@ const projects = [
     description: `A mobile version control recipe editing app that allows users to create 
       recipes, edit them, and view all previous versions of their recipes. 
       I worked as a frontend developer, writing in React Native. I was responsible
-      for implementing an image upload feature, refactoring styling throughout the app
+      for implementing an image upload feature using the device camera, refactoring styling throughout the app
       in accordance with new UX designs, managing state for creating and editing a recipe,
       and integrating with an ingredient-prediction API built by our Data Science team. 
       I collaborated with a remote team of seven other developers over a period of eight weeks.`,
