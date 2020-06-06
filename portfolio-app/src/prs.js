@@ -104,9 +104,8 @@ export default {
   },
   "Sauti Studio": {
     name: "Sauti Studio",
-    description: `I read somewhere that if you're not embarrassed by your old work, then you're not learning enough.
-      Well, let's take these PRs as a case in point. Although I think the code I wrote is pretty good, you can see that
-      I still had a lot to learn about using branches and writing descriptive pull requests. My progress in that regard
+    description: `I'm happy with the quality of my code on this project, but not happy with the quality of my PRs.
+      You can see I still had a lot to learn about using branches and writing descriptive pull requests. My progress in that regard
       is clear in subsequent projects listed above.`,
     all:
       "https://github.com/Sauti-Studio3/Back-End/pulls?q=is%3Apr+is%3Aclosed",
