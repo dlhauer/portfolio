@@ -7,8 +7,10 @@ const HomePage = (props) => (
     <div className="body-text">
       <p className="heading">Hi!</p>
       <p>
-        I'm a full stack web developer proficient in JavaScript, React, Node,
-        and Python.
+        I'm a full stack web developer proficient in{" "}
+        <span className="code">JavaScript</span>,{" "}
+        <span className="code">React</span>, <span className="code">Node</span>,
+        and <span className="code">Python</span>.
       </p>
       <p>
         I'm a big fan of bone-DRY code that is as nice to look at as it is to
@@ -24,7 +26,12 @@ const HomePage = (props) => (
     </div>
     <div className="img-container">
       <div className="circle">
-        <img className="avatar" src={danImg} />
+        <img
+          className="avatar"
+          alt="Portrait of Dan Hauer at Tieu Giao Temple, Hanoi, December 2019"
+          title="Portrait of Dan Hauer at Tieu Giao Temple, Hanoi, December 2019"
+          src={danImg}
+        />
       </div>
     </div>
   </div>

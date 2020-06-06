@@ -20,12 +20,18 @@ const Nav = (props) => (
       <NavLink to="/projects" className="link">
         PROJECTS
       </NavLink>
-      <a href="https://github.com/dlhauer/" target="_blank" className="link gh">
+      <a
+        href="https://github.com/dlhauer/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link gh"
+      >
         <FontAwesomeIcon icon={faGithub} />
       </a>
       <a
         href="https://www.linkedin.com/in/dlhauer/"
         target="_blank"
+        rel="noopener noreferrer"
         className="link li"
       >
         <FontAwesomeIcon icon={faLinkedin} />
@@ -33,6 +39,7 @@ const Nav = (props) => (
       <a
         href="https://www.youtube.com/danhauer"
         target="_blank"
+        rel="noopener noreferrer"
         className="link yt"
       >
         <FontAwesomeIcon icon={faYoutube} />

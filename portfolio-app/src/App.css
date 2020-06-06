@@ -5,7 +5,6 @@ html {
 body {
   background-color: #303030;
   color: white;
-  /* border: 5px solid green; */
 }
 p {
   font-size: 1.9rem;
@@ -26,20 +25,18 @@ p {
   width: 100%;
   max-width: 1000px;
   margin: auto;
-  /* border: 1px solid red; */
 }
 
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 50px 0 50px;
-  /* border: 1px solid blue; */
+  margin: 0 5rem 0 5rem;
   max-width: 100%;
 }
 
 .title-container {
-  margin-top: 30px;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
 }
@@ -58,18 +55,19 @@ h2 {
 .name {
   border-bottom: 1px solid white;
   padding: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .links {
   display: flex;
   justify-content: space-between;
   width: 225px;
-  margin-right: 10px;
+  margin-right: 1rem;
 }
 
 .link:hover {
   color: #00ffff;
+  cursor: pointer;
 }
 
 .yt:hover {
@@ -86,21 +84,30 @@ h2 {
 
 .body-text {
   text-align: left;
-  margin-left: 100px;
-  padding-left: 40px;
+  margin-left: 10rem;
+  padding-left: 4rem;
   border-left: 5px solid white;
+}
+
+.code {
+  font-family: monospace;
+  color: orange;
+  background-color: #2c2c2c;
+  border: 1px solid #606060;
+  padding: 1px 2px;
+  border-radius: 3px;
 }
 
 .heading {
   font-size: 4rem;
-  margin: 0px;
+  margin: 0;
 }
 
 .home-container {
   display: flex;
   align-items: flex-start;
-  margin-top: 40px;
-  margin-bottom: 200px;
+  margin-top: 4rem;
+  margin-bottom: 20rem;
   justify-content: center;
 }
 
@@ -123,8 +130,8 @@ h2 {
 }
 
 .img-container {
-  margin-left: 35px;
-  margin-right: 40px;
+  margin-left: 3.5rem;
+  margin-right: 4rem;
   float: right;
 }
 
@@ -140,28 +147,28 @@ h2 {
   height: 100%;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .nav-container {
     flex-direction: column;
   }
 
   .links {
-    margin-top: 30px;
+    margin-top: 3rem;
   }
 
   .home-container {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 
   .img-container {
     margin-right: 0;
-    margin-left: 15px;
+    margin-left: 1.5rem;
   }
 
   .body-text {
-    padding-left: 0px;
-    margin-left: 0px;
+    padding-left: 0;
+    margin-left: 0;
     border: none;
   }
 }
@@ -174,8 +181,8 @@ h2 {
   .home-container {
     flex-direction: column;
     align-items: center;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .body-text {
@@ -194,15 +201,15 @@ h2 {
 .project-container {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   margin-bottom: 6rem;
-  /* border: 1px solid blue; */
 }
 
 .project-text {
-  max-width: 500px;
+  width: 50%;
   line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 
 .project-description {
@@ -211,7 +218,7 @@ h2 {
 
 .image-container {
   height: 400px;
-  margin-left: 40px;
+  margin-left: 4rem;
 }
 
 .project-image {
@@ -226,6 +233,10 @@ h2 {
   height: 300px;
 }
 
+.link-container {
+  display: flex;
+}
+
 .project-link {
   color: #00ffff;
   font-size: 1.6rem;
@@ -237,15 +248,27 @@ h2 {
   text-decoration: underline;
 }
 
-.inline-link {
-  font-size: inherit;
+.pr-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
 
-@media (max-width: 800px) {
+.pr-link {
+  margin-bottom: 0.5rem;
+  width: fit-content;
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
   .project-container {
     flex-direction: column;
     justify-content: center;
-    /* border: 3px solid green; */
+    align-items: center;
+  }
+
+  .project-text {
+    width: 65%;
   }
 
   .project-title {
@@ -255,14 +278,32 @@ h2 {
   .link-container {
     display: flex;
     justify-content: center;
-    /* border: 1px solid red; */
+  }
+
+  .toggle-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 165px;
   }
 
   .project-link {
     margin-left: 1.5rem;
+    margin-right: 0;
   }
 
   .image-container {
     margin: 0;
   }
+}
+
+@media (max-width: 600px) {
+  .project-text {
+    width: 90%;
+  }
+}
+
+.inline-link {
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
 }
