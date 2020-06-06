@@ -15,8 +15,9 @@ const Project = ({ project }) => {
               className="link project-link"
               href={project.site}
               target="_blank"
+              rel="noopener noreferrer"
             >
-              View Site
+              Visit Site
             </a>
           )}
           {project.repo && (
@@ -24,25 +25,26 @@ const Project = ({ project }) => {
               className="link project-link"
               href={project.repo}
               target="_blank"
+              rel="noopener noreferrer"
             >
               View Code
             </a>
           )}
-          <div className="wacky-container">
+          <div className="toggle-container">
             {descVisible ? (
-              <a
+              <span
                 className="link project-link"
                 onClick={() => setDescVisible(false)}
               >
                 View my PRs
-              </a>
+              </span>
             ) : (
-              <a
+              <span
                 className="link project-link"
                 onClick={() => setDescVisible(true)}
               >
                 View Description
-              </a>
+              </span>
             )}
           </div>
         </div>
@@ -59,8 +61,10 @@ const Project = ({ project }) => {
       >
         {project.image && (
           <img
+            alt={`Screenshot of ${project.name} app`}
+            title={`Screenshot of ${project.name} app`}
             className={`project-image ${
-              project.name == "MyDish" && "mydish-image"
+              project.name === "MyDish" && "mydish-image"
             }`}
             src={project.image}
           />
